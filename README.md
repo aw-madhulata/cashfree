@@ -22,15 +22,15 @@ Or install it yourself as:
 
 ## Usage
 
-Initiate cashfree object
-    cashfree = Cashfree::Cashfree.new APP_ID, APP_KEY, API_VERSION, CASHFREE_URL, CASHFREE_RETURN_URL
+### Initiate cashfree object
+    `cashfree = Cashfree::Cashfree.new APP_ID, APP_KEY, API_VERSION, CASHFREE_URL, CASHFREE_RETURN_URL`
 
-Generate token
-    cashfree.generate_order order_id, amount, email, mobile, customer_id #customer_id is optional in that case we treat mobile as customer_id
+### Generate token
+    `cashfree.generate_order order_id, amount, email, mobile, customer_id` #customer_id is optional in that case we treat mobile as customer_id
 
-Confirm if paid. 
+### Confirm if paid. 
      On callback page.
-     cashfree.validate_payment order_id # it will return amount if paid otherwise consider payment not done.
+     `cashfree.validate_payment order_id` # it will return amount if paid otherwise consider payment not done.
 
 
 
