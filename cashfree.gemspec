@@ -10,5 +10,5 @@ Gem::Specification.new do |s|
   s.license = "MIT"
   s.add_runtime_dependency 'net-http', '~> 0.3', '>= 0.3.2'
   s.add_runtime_dependency 'json', '~> 2.6', '>= 2.6.3'
-  s.add_runtime_dependency 'openssl', '~> 2.2.1'
+  s.add_runtime_dependency 'openssl', '~> 3.3.0'
 end 
